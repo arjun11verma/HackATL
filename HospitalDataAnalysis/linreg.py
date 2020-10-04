@@ -54,7 +54,7 @@ model = LinearRegressionModel(1, 1)
 criterion = torch.nn.MSELoss(size_average = False) #sets our loss function to mean squared error, which means that we will be measuring our loss thorugh the mean squared error of our line compared to our data
 optimizer = torch.optim.SGD(model.parameters(), lr = 0.01) #sets our optimizer to stochastic gradient descent, fancy way of saying a randomized calculus based algorithm that minimizes MSE
 
-for test in range(1000): #learning phase!
+for test in range(1000): #learning phase
     optimizer.zero_grad() #zeros the optimizer gradient (effectively resets it)
 
     predicted_number_of_patients = model.linear(xData) #calculates the predicted number of patients 
@@ -74,12 +74,4 @@ days_after = 14.0
 
 print("There are "+ str(test_num_patients_at_date(days_after)) + " patients at the hospital " + str(days_after) + " days after the date of " + date)
 print("Based off of this, you should order " + str(test_num_patients_at_date(days_after)/17) + " needles")
-
-#both sides, ML for algorithm and front end/database for marketplace
-#you can use express and react, shouldn't be too difficult
-#track certain diseases, certain people, ages, all sorts of shit once we have valid data 
-
-# start on simple layout and backend in react and express to have a system where you can upload a certain product/device for others
-# to click on and buy
-# start on simple ML algorithm to predict number of customers (don't worry about extra features, just focus on a simple 1:1 linreg model)
 
