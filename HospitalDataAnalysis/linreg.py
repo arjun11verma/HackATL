@@ -6,15 +6,11 @@ from torch.autograd import Variable
 
 class LinearRegressionModel(nn.Module):
     def __init__(self, xdim, ydim):
-        super(LinearRegressionModel, self).__init__() #this intializes the linear regression ML model from pytorch
-        self.linear = nn.Linear(xdim, ydim) # defines the linear dimensions (in features/batch size)
-        #in features is the dimensions of your tensor, and batch size is the number of tensors/inputs
-
+        super(LinearRegressionModel, self).__init__()
+        self.linear = nn.Linear(xdim, ydim) 
     def forward(self, x):
         y_prediction = self.linear(x)
         return y_prediction
-
-
 def getData(link, state):
     l = []
     count = 0
@@ -46,32 +42,26 @@ for i in range(7):
     time.append([state_hospital_data[i][0]])
     num_patients.append([state_hospital_data[i][1]])
 
-xData = Variable(torch.tensor(time)) #converts our data from a list into a tensor, which is just a glorifed form of multidimensional array (it will be one dimension in this case)
-yData = Variable(torch.tensor(num_patients)) #Tensors are arrays of arrays! You need to remember that! A tensor can be 1 x 1 x 32 but since the transformation is 1x1 its fine 
+xData = Variable(torch.tensor(time)) 
+yData = Variable(torch.tensor(num_patients)) 
 
 model = LinearRegressionModel(1, 1)
 
-criterion = torch.nn.MSELoss(size_average = False) #sets our loss function to mean squared error, which means that we will be measuring our loss thorugh the mean squared error of our line compared to our data
-optimizer = torch.optim.SGD(model.parameters(), lr = 0.01) #sets our optimizer to stochastic gradient descent, fancy way of saying a randomized calculus based algorithm that minimizes MSE
-
+criterion = torch.nn.MSELoss(size_average = False) 
+optimizer = torch.optim.SGD(model.parameters(), lr = 0.01)
 for test in range(1000): #learning phase
     optimizer.zero_grad() #zeros the optimizer gradient (effectively resets it)
-
     predicted_number_of_patients = model.linear(xData) #calculates the predicted number of patients 
-
     loss = criterion(predicted_number_of_patients, yData) #calculates how wrong the prediction is and stores it in our criterion object
-
     loss.backward() #performs a backward pass
-
     optimizer.step() #updates the weights
-
-
 def test_num_patients_at_date(days_after_start):
     a = model(Variable(torch.tensor([[days_after_start]])))
     return a.item()
 
 days_after = 14.0
+patients_per_needle = 17.0
 
-print("There are "+ str(test_num_patients_at_date(days_after)) + " patients at the hospital " + str(days_after) + " days after the date of " + date)
-print("Based off of this, you should order " + str(test_num_patients_at_date(days_after)/17) + " needles")
+print("There are "+ str(round(test_num_patients_at_date(days_after), 0)) + " patients at the hospital " + str(days_after) + " days after the date of " + date)
+print("Based off of this, you should order " + str(round(test_num_patients_at_date(days_after)/patients_per_needle, 0)) + " needles, assuming that you use one needle per " + str(patients_per_needle) + " patients daily.")
 
