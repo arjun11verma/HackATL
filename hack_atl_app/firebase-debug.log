@@ -1,0 +1,121 @@
+[debug] [2020-10-03T19:43:28.351Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T19:43:28.353Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-03T19:43:28.353Z] CLI Version:   8.11.2
+[debug] [2020-10-03T19:43:28.353Z] Platform:      win32
+[debug] [2020-10-03T19:43:28.353Z] Node Version:  v12.18.4
+[debug] [2020-10-03T19:43:28.355Z] Time:          Sat Oct 03 2020 15:43:28 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-10-03T19:43:28.355Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T19:43:28.355Z] 
+[debug] [2020-10-03T19:43:28.359Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-03T19:43:28.360Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\VSCode Projects\HackATL\hack_atl_app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-03T19:43:47.084Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-10-03T19:43:47.398Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Oct 2020 19:43:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project hackatl-77712 (HackATL) 
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-10-03T19:44:13.939Z] >>> HTTP REQUEST GET https://hackatl-77712.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2020-10-03T19:44:14.117Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 03 Oct 2020 19:44:14 GMT","content-type":"application/json; charset=utf-8","content-length":"58","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-10-03T19:44:30.069Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T19:44:30.072Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-03T19:44:30.072Z] CLI Version:   8.11.2
+[debug] [2020-10-03T19:44:30.072Z] Platform:      win32
+[debug] [2020-10-03T19:44:30.072Z] Node Version:  v12.18.4
+[debug] [2020-10-03T19:44:30.073Z] Time:          Sat Oct 03 2020 15:44:30 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-10-03T19:44:30.074Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T19:44:30.074Z] 
+[debug] [2020-10-03T19:44:30.081Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-03T19:44:30.082Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\VSCode Projects\HackATL\hack_atl_app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-03T19:44:35.899Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-10-03T19:44:36.300Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Oct 2020 19:44:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project hackatl-77712 (HackATL) 
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-10-03T19:44:40.756Z] >>> HTTP REQUEST GET https://hackatl-77712.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2020-10-03T19:44:40.933Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 03 Oct 2020 19:44:41 GMT","content-type":"application/json; charset=utf-8","content-length":"58","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-10-03T19:44:51.631Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T19:44:51.633Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-03T19:44:51.633Z] CLI Version:   8.11.2
+[debug] [2020-10-03T19:44:51.633Z] Platform:      win32
+[debug] [2020-10-03T19:44:51.633Z] Node Version:  v12.18.4
+[debug] [2020-10-03T19:44:51.635Z] Time:          Sat Oct 03 2020 15:44:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-10-03T19:44:51.635Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T19:44:51.635Z] 
+[debug] [2020-10-03T19:44:51.645Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-03T19:44:51.646Z] > authorizing via signed-in user
+[debug] [2020-10-03T19:44:51.647Z] [iam] checking project hackatl-77712 for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2020-10-03T19:44:51.653Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hackatl-77712:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2020-10-03T19:44:51.848Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Oct 2020 19:44:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=89","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-03T19:44:51.852Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hackatl-77712  
+ 
+[debug] [2020-10-03T19:44:51.983Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Oct 2020 19:44:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'hackatl-77712'...
+[info] 
+[info] i  deploying database 
+[info] i  database: checking rules syntax... 
+[debug] [2020-10-03T19:44:52.006Z] >>> HTTP REQUEST PUT https://hackatl-77712.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+[debug] [2020-10-03T19:44:52.399Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 03 Oct 2020 19:44:52 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
