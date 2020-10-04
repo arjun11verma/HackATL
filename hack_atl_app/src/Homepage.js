@@ -21,7 +21,7 @@ class Homepage extends Component {
                     eachInput = eachInput.concat(subSnapshot.val());
                 });
             });
-        });  
+        });
 
         setTimeout(() => {
             for(var i = 0; i < (eachInput.length)/6; i++) {

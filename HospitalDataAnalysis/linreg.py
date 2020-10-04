@@ -38,7 +38,7 @@ def getData(link, state):
         l[i][0] -= yearBase
     return date, l
 
-date, state_hospital_data = getData("C:\VSCode Projects\MoreDickingAroundWithPython\estimated_inpatient_all_20201001_1424.csv", 'GA')
+date, state_hospital_data = getData("C:\VSCode Projects\HackATL\HospitalDataAnalysis\estimated_inpatient_all_20201001_1424.csv", 'GA')
 
 num_patients = []
 time = []
